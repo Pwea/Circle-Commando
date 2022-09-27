@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@keyframes screen_shake {
+    0% {left: 0px; right: 0px; top: 0px; bottom: 0px;}
+    25% {left: -5px; top: -5px;}
+    50% {left: 0px; top: 0px;}
+    75% {left: -5px; top: -5px;}
+    100% {left: 0px; top: 0px;}
+}
+
+body {
+    background-color: black;
+}
