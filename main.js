@@ -203,6 +203,8 @@ function spawnEnemies() {
             wave += 1
         } else if (score.score >= 5000) {
             wave += 1
+        } else if (score.score >= 10000) {
+            wave += 1
         }
 
 
@@ -226,7 +228,7 @@ function spawnEnemies() {
             y: Math.sin(angle)
         }
         if (game_over !== true) {
-            enemies.push(new Enemy(x, y, radius + (wave*1.5), color, velocity))
+            enemies.push(new Enemy(x, y, radius + (wave*1.2), color, velocity))
         } else {
             enemies.length = 0
         }
