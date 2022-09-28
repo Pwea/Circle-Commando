@@ -180,7 +180,7 @@ const score = new Score(30, 30, 0)
 const projectiles = []
 const enemies = []
 const particles = []
-const enemy_size = [10, 50]
+const enemy_size = [10, 30]
 var wave = 0
 let game_over = false
 
