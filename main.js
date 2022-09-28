@@ -200,11 +200,11 @@ function spawnEnemies() {
         let radius = Math.random() * (enemy_size[1] - enemy_size[0]) + enemy_size[0]
         
         if (score.score >= 1000) {
-            wave += 1
+            wave += 0.5
         } else if (score.score >= 5000) {
-            wave += 1
+            wave += 0.5
         } else if (score.score >= 10000) {
-            wave += 1
+            wave += 0.5
         }
 
 
