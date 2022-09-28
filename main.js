@@ -228,7 +228,7 @@ function spawnEnemies() {
             y: Math.sin(angle)
         }
         if (game_over !== true) {
-            enemies.push(new Enemy(x, y, radius + (wave*1.2), color, velocity))
+            enemies.push(new Enemy(x, y, radius + (wave*1.1), color, velocity))
         } else {
             enemies.length = 0
         }
