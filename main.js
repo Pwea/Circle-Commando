@@ -163,7 +163,7 @@ class Game_Over {
         context.font = "20px Georgia, serif";
         context.fillText(`Score: ${this.score} points`,this.x + 50,this.y + 50)
         context.fillText(`Time: ${this.time} seconds`, this.x + 50, this.y + 80)
-        context.font = "15px Georgia, serif";
+        context.font = "25px Georgia, serif";
         context.fillText("Made By @Pwea", this.btnX + 150, this.btnY + 100)
         context.fillStyle = "white"
         context.font = "20px Georgia, serif";
