@@ -150,9 +150,9 @@ class Game_Over {
         this.score = score
         this.time = time
         this.btnX = this.x * 1.06
-        this.btnY = this.y * 1.3
+        this.btnY = this.y + (this.y - 200)
         this.btnW = this.width / 1.2
-        this.btnH = this.height / 4
+        this.btnH = this.height / 4.5
     }
     draw() {
         context.fillStyle = "white"
@@ -163,7 +163,7 @@ class Game_Over {
         context.font = "20px Georgia, serif";
         context.fillText(`Score: ${this.score} points`,this.x + 50,this.y + 50)
         context.fillText(`Time: ${this.time} seconds`, this.x + 50, this.y + 80)
-        context.fillText("Made By @Pwea", this.btnX + 120, this.btnY + 75)
+        context.fillText("Made By @Pwea", this.btnX + 120, this.btnY + 100)
         context.fillStyle = "white"
         context.fillText("Play Again", this.btnX + 120, this.btnY + 25)
     }
