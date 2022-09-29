@@ -150,7 +150,7 @@ class Game_Over {
         this.score = score
         this.time = time
         this.btnX = this.x * 1.06
-        this.btnY = this.y + (this.y - 200)
+        this.btnY = this.y * 1.2
         this.btnW = this.width / 1.2
         this.btnH = this.height / 4.5
     }
