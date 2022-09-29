@@ -1,3 +1,6 @@
+// Made by @Pwea
+
+
 // Setup
 const canvas = document.querySelector("canvas")
 const context = canvas.getContext("2d")
@@ -158,8 +161,9 @@ class Game_Over {
         context.fillRect(this.btnX, this.btnY, this.btnW, this.btnH)
         context.fillStyle = "black"
         context.font = "20px Georgia, serif";
-        context.fillText(`Score: ${this.score} points`,this.x + 50,this.y + 50);
+        context.fillText(`Score: ${this.score} points`,this.x + 50,this.y + 50)
         context.fillText(`Time: ${this.time} seconds`, this.x + 50, this.y + 80)
+        context.fillText("Made By @Pwea", this.btnX + 120, this.btnY + 75)
         context.fillStyle = "white"
         context.fillText("Play Again", this.btnX + 120, this.btnY + 25)
     }
@@ -279,7 +283,7 @@ function animate() {
         // Stops the Game
         if (distance - enemy.radius - player.radius < 1) {
             game_over = true
-            const gameOver = new Game_Over(400,150,score.score, seconds)
+            const gameOver = new Game_Over(400,300,score.score, seconds)
             gameOver.draw()
             console.log(seconds)
             background_music.pause()
@@ -358,7 +362,7 @@ window.addEventListener("click", (evt) => {
     ))
 })
 
-const game_over_template = new Game_Over(400, 150, 0, 0)
+const game_over_template = new Game_Over(400, 300, 0, 0)
 
 var rect = {
     x: game_over_template.btnX,
@@ -375,6 +379,7 @@ canvas.addEventListener("click", (evt) => {
         game_over = false
         score.score = 0
         seconds = 0
+        wave = 0
         animate()
     }
 })
