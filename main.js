@@ -7,7 +7,6 @@ const context = canvas.getContext("2d")
 canvas.width = innerWidth
 canvas.height = innerHeight
 canvas.style.position = "absolute"
-let { ctx, dpi, set, get } = canvas;
 
 const background_music = new Audio("./backgrnd_music.wav")
 const knockout = new Audio("./knockout.wav")
